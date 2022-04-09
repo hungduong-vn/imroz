@@ -1,12 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <title>imroz</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <header id="menu">
+      <!-- <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo.png" alt="Logo" />
+        </a>
+        <div class="header__right">
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarText">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blocks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__btn">
+            <button type="button" class="btn btn-outline-light">BUY NOW</button>
+          </div>
+        </div>
+      </nav> -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo.png" alt="Logo" />
+        </a>
+        <div class="d-flex" id="nav__lg">
+          <button
+            type="button"
+            class="header__btn btn btn-outline-light d-lg-none"
+          >
+            BUY NOW
+          </button>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-lg-auto">
+            <div id="navCollapseHead">
+              <img src="./img/logo-symbol-dark.png" alt="">
+              <button
+                class="close-btn d-block d-lg-none"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                id="navbarCloseBtn"
+              >
+              X
+              </button>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blocks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">
+                <button
+                  type="button"
+                  class="header__btn btn btn-outline-light d-none d-md-block"
+                >
+                  BUY NOW
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section id="slide">
+      <!-- data-ride="carousel" -->
+      <div id="slide__carousel" class="carousel slide">
+        <ol class="carousel-indicators">
+          <li
+            data-target="#slide__carousel"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#slide__carousel" data-slide-to="1"></li>
+          <li data-target="#slide__carousel" data-slide-to="2"></li>
+          <li data-target="#slide__carousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="./img/bg-image-22.jpg"
+              alt="First slide"
+            />
+            <div class="carousel-caption d-none d-md-block slide__text">
+              <h1>UX Research.</h1>
+              <p>
+                There are many variations of passages of Lorem Ipsum available
+                but the majority have suffered alteration.
+              </p>
+              <div class="slide__btn">
+                <button type="button" class="btn">CONTACT US</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="./img/bg-image-23.jpg"
+              alt="Second slide"
+            />
+            <div class="carousel-caption d-none d-md-block slide__text">
+              <h1>Marketing</h1>
+              <p>
+                There are many variations of passages of Lorem Ipsum available
+                but the majority have suffered alteration.
+              </p>
+              <div class="slide__btn">
+                <button type="button" class="btn">CONTACT US</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="./img/bg-image-24.jpg"
+              alt="Third slide"
+            />
+            <div class="carousel-caption d-none d-md-block slide__text">
+              <h1>Development</h1>
+              <p>
+                There are many variations of passages of Lorem Ipsum available
+                but the majority have suffered alteration.
+              </p>
+              <div class="slide__btn">
+                <button type="button" class="btn">CONTACT US</button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="./img/bg-image-20.jpg"
+              alt="Fourth slide"
+            />
+            <div class="carousel-caption d-none d-md-block slide__text">
+              <h1>UX Research.</h1>
+              <p>
+                There are many variations of passages of Lorem Ipsum available
+                but the majority have suffered alteration.
+              </p>
+              <div class="slide__btn">
+                <button type="button" class="btn">CONTACT US</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#slide__carousel"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true">
+            <i class="fas fa-arrow-left"></i>
+          </span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#slide__carousel"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true">
+            <i class="fas fa-arrow-right"></i>
+          </span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    <section id="service">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 service__head">
+            <p>What we can do for you</p>
+            <h1>Our Awesome Service</h1>
+            <p>
+              There are many variations of passages of Lorem Ipsum available,
+              but the majority have suffered alteration.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./main.js"></script>
+  </body>
 </html>
