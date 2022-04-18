@@ -2,6 +2,15 @@
   .container {
     max-width: 1260px;
   }
+  .row--35 {
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+  .row--35 > [class*="col"],
+  .row--35 > [class*="col-"] {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 @media screen and (max-width: 1199px) {
   /* NAV */
