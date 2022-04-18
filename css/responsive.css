@@ -1,5 +1,16 @@
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1260px;
+  }
+}
 @media screen and (max-width: 1199px) {
   /* NAV */
+  #menu nav {
+    padding: 30px;
+  }
+  #navbarNav ul {
+    width: 600px;
+  }
   .header__btn {
     font-size: 14px;
     letter-spacing: 0;
@@ -13,6 +24,14 @@
   #slide__carousel .carousel-control-next {
     display: none;
   }
+  /* PROJECTS */
+  .project__img img {
+    width: 85%;
+  }
+  .project__title {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 991px) {
@@ -24,6 +43,8 @@
     background-color: rgba(0, 0, 0, 0.4);
     width: 100vw;
     height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
   #navbarNav ul {
     z-index: 10;
@@ -35,14 +56,15 @@
     width: 400px;
     align-items: flex-start;
     padding-left: 20px;
+    overflow-y: scroll;
   }
-  #navbarNav ul li{
+  #navbarNav ul li {
     border-top: solid 1px rgba(0, 0, 0, 0.2);
     width: 90%;
   }
   #navbarNav ul li:last-of-type,
-  #navbarNav ul li:first-of-type{
-      border: none;
+  #navbarNav ul li:first-of-type {
+    border: none;
   }
   #navbarNav ul li a {
     color: #000 !important;
@@ -50,29 +72,71 @@
   .header__btn {
     margin: 0 30px 0 0;
   }
-  #navbarCloseBtn{
-      /* position: absolute;
-      top: 3%;
-      right: 3%; */
-      background-color: transparent;
-      border: none;
-      font-size: 1.4rem;
-      transition: all 0.8s;
+  #navbarCloseBtn {
+    background-color: transparent;
+    border: none;
+    font-size: 1.4rem;
+    transition: all 0.8s;
   }
-  #navCollapseHead{
-      display: flex;
-      justify-content: space-between;
-      width: 90%;
-      padding: 20px 0;
+  #navCollapseHead {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 20px 0;
   }
-  #navCollapseHead img{
-      height: 56px;
-      width: 56px;
+  #navCollapseHead img {
+    height: 56px;
+    width: 56px;
+  }
+  .header__btn {
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    font-weight: 400;
+  }
+  /* CAROUSEL */
+  .slide__text h1 {
+    font-size: 60px;
+  }
+  .carousel-item {
+    height: 650px;
+  }
+  .project__title {
+    font-size: 22px;
   }
 }
 
 @media screen and (max-width: 767px) {
+  /* HEADER */
+
+  .header__btn {
+    font-size: 14px;
+    letter-spacing: 0;
+    padding: 7px 16px;
+    margin-right: 0;
+  }
+  .navbar-brand img {
+    width: 120px;
+    height: auto;
+  }
+  /* CAROUSEL */
+  .carousel-item {
+    height: 500px;
+  }
+  .slide__text h1 {
+    font-size: 36px;
+    line-height: 49px;
+  }
+  .slide__text p {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 575px) {
+  /* HEADER */
+  #menu nav {
+    padding: 30px 15px;
+  }
 }
