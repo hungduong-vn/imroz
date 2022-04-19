@@ -156,6 +156,25 @@
     line-height: 28px;
     padding: 0;
   }
+  /* TESTMONIAL */
+  .testimonial__text p{
+    font-size: 20px !important;
+    line-height: 37px !important;
+    padding: 0;
+    font-weight: 400;
+  }
+  .testimonial__text p:before{
+    top: -15px;
+    background-size: 100px;
+    left: 50%;
+    right: 0;
+    width: 100%;
+    margin-left: -48px;
+  }
+  .testimonial__author h6{
+    line-height: 20px;
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-width: 575px) {
