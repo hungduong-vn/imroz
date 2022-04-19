@@ -12,6 +12,15 @@
     padding-right: 25px;
   }
 }
+@media (min-width: 992px) {
+  .col-lg-6 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
 @media screen and (max-width: 1199px) {
   /* NAV */
   #menu nav {
@@ -40,6 +49,12 @@
   .project__title {
     font-size: 24px;
     margin-bottom: 0;
+  }
+  /* ABOUT */
+  .about__tab__btn {
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 14px;
   }
 }
 
@@ -147,5 +162,12 @@
   /* HEADER */
   #menu nav {
     padding: 30px 15px;
+  }
+  /* TESTIMONIAL */
+  #testimonialTab .nav-link{
+    width: 43%;
+  }
+  #testimonialTab .nav-link.active{
+    transform: scale(1.05);
   }
 }
