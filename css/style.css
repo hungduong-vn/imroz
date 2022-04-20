@@ -139,15 +139,6 @@ header {
   width: 695px;
   align-items: center;
 }
-/* .navbar-nav > li:first-child{
-    margin-left: 0;
-}
-.navbar-nav > li {
-    margin: 0 15px;
-}
-.navbar-nav > li:last-child{
-    margin-right: 0;
-} */
 .navbar-nav li a {
   line-height: 60px;
   padding: 0 !important;
@@ -231,7 +222,7 @@ header {
 
 #slide__carousel .carousel-control-prev,
 #slide__carousel .carousel-control-next {
-  z-index: 0;
+  z-index: 1;
 }
 #slide__carousel .carousel-control-prev .carousel-control-prev-icon,
 #slide__carousel .carousel-control-next .carousel-control-next-icon {
@@ -948,4 +939,9 @@ footer {
 }
 .footer__social__logo ul li:hover a{
   color: white;
+}
+
+.animate__animated .animate__fadeInUp {
+  --animate-duration: 2s;
+  /* --animation-delay: 1.5s; */
 }
