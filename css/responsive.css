@@ -11,6 +11,12 @@
     padding-left: 25px;
     padding-right: 25px;
   }
+  .offset-xl-1 {
+    margin-left: 8.33333333%;
+  }
+  .offset-xl-2 {
+    margin-left: 16.66666667%;
+}
 }
 @media (min-width: 992px) {
   .col-lg-6 {
@@ -21,9 +27,9 @@
     width: 50%;
   }
 }
-@media screen and (max-width: 1199px) and (min-width: 992px){
+@media screen and (max-width: 1199px) and (min-width: 992px) {
   /* NEWS */
-  .news__subtitle{
+  .news__subtitle {
     font-size: 20px;
     line-height: 28px;
   }
@@ -135,6 +141,21 @@
   .project__title {
     font-size: 22px;
   }
+  /* CTA */
+  .cta__text{
+    font-size: 26px;
+  }
+  .call-to-action-btn{
+    text-align: left;
+    margin-top: 20px;
+  }
+  .cta__btn{
+    padding: 16px 35px;
+  }
+  /* FOOTER */
+  .footer__last{
+    margin-top: 40px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -164,13 +185,13 @@
     padding: 0;
   }
   /* TESTMONIAL */
-  .testimonial__text p{
+  .testimonial__text p {
     font-size: 20px !important;
     line-height: 37px !important;
     padding: 0;
     font-weight: 400;
   }
-  .testimonial__text p:before{
+  .testimonial__text p:before {
     top: -15px;
     background-size: 100px;
     left: 50%;
@@ -178,13 +199,21 @@
     width: 100%;
     margin-left: -48px;
   }
-  .testimonial__author h6{
+  .testimonial__author h6 {
     line-height: 20px;
     font-size: 14px;
   }
-  .news__subtitle{
+  .news__subtitle {
     font-size: 22px;
     line-height: 33px;
+  }
+  /* CLIENTS */
+  .client img {
+    height: auto;
+    max-width: 100px;
+  }
+  .client {
+    border: none;
   }
 }
 
@@ -194,11 +223,14 @@
     padding: 30px 15px;
   }
   /* TESTIMONIAL */
-  #testimonialTab .nav-link{
+  #testimonialTab .nav-link {
     width: 43%;
   }
-  #testimonialTab .nav-link.active{
+  #testimonialTab .nav-link.active {
     transform: scale(1.05);
   }
-  
+  /* CLIENTS */
+  .client {
+    flex-basis: 50%;
+  }
 }
