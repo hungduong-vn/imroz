@@ -291,7 +291,7 @@ header {
 }
 #slide__carousel .carousel-indicators {
   position: absolute;
-  bottom: 60px;
+  bottom: 5%;
   margin-bottom: 0;
   align-items: center;
 }
